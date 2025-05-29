@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <header id="top">
+      <img src="./images/logo.png" alt="coffee logo" />
+      <h1>Contact Us</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="numbers.html">Numbers</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- hero image -->
+      <img src="./images/background.jpeg" alt="coffee beans" width="100%" />
+      <br />
+    </header>
+
+    <main style="margin-bottom: 5rem">
+      <h2>Contact Us</h2>
+
+      <form>
+        <!-- name field -->
+        <label for="name"><b>Name:</b> </label>
+        <input type="text" name="name" id="name" />
+        <br />
+        <br />
+
+        <!-- email field -->
+        <label for="email"><b>Email:</b> </label>
+        <input type="email" name="email" id="email" />
+        <br />
+        <br />
+
+        <!-- description -->
+        <label for="description"><b>Description</b></label
+        ><br />
+        <textarea
+          name="description"
+          id="description"
+          cols="50"
+          rows="10"
+          placeholder="leave your description"
+        ></textarea>
+
+        <!-- submit -->
+        <br />
+        <button type="submit">Submit here</button>
+      </form>
+    </main>
+    <footer>
+      <p id="copyright">
+        copyright &copy;
+        <script>
+          const span = document.createElement("span");
+          span.textContent = new Date().getFullYear().toString();
+          const paragraph = document
+            .getElementById("copyright")
+            .appendChild(span);
+        </script>
+      </p>
+      <h3>
+        <a href="#top">Back to top</a>
+      </h3>
+    </footer>
+  </body>
+</html>

@@ -6,7 +6,7 @@
     <title>Coffee Junkie</title>
   </head>
   <body>
-    <header>
+    <header id="top">
       <img src="./images/logo.png" alt="coffee logo" />
       <h1>Coffee Junkie</h1>
       <nav>
@@ -25,8 +25,81 @@
           </li>
         </ul>
       </nav>
-
+      <!-- hero image -->
       <img src="./images/background.jpeg" alt="coffee beans" width="100%" />
+      <br />
     </header>
+
+    <main>
+      <h2>Featured Products</h2>
+      <section>
+        <!-- house blend -->
+        <h3>House Blend Coffee</h3>
+        <img src="./images/house-blend.jpeg" alt="house blend" />
+        <p style="width: 50%">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad rem
+          aspernatur illo animi, quo exercitationem ipsam quasi omnis vero aut
+          dicta iusto laboriosam harum consequatur deserunt nisi reprehenderit
+          provident cupiditate!
+        </p>
+        <h4>
+          <a href="http://en.wikipedia.org/wiki/Coffee" target="_blank"
+            >Details</a
+          >
+        </h4>
+        <!-- end of house blend -->
+      </section>
+
+      <section>
+        <!-- French Roast -->
+        <h3>French Roast</h3>
+        <img src="./images/french-roast.jpeg" alt="French Roast" />
+        <p style="width: 50%">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad rem
+          aspernatur illo animi, quo exercitationem ipsam quasi omnis vero aut
+          dicta iusto laboriosam harum consequatur deserunt nisi reprehenderit
+          provident cupiditate!
+        </p>
+        <h4>
+          <a href="http://en.wikipedia.org/wiki/Coffee" target="_blank"
+            >Details</a
+          >
+        </h4>
+        <!-- end of French Roast -->
+      </section>
+
+      <section>
+        <!-- Columbian Roast -->
+        <h3>Columbian Roast</h3>
+        <img src="./images/columbian-roast.jpeg" alt="Columbian Roast" />
+        <p style="width: 50%">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad rem
+          aspernatur illo animi, quo exercitationem ipsam quasi omnis vero aut
+          dicta iusto laboriosam harum consequatur deserunt nisi reprehenderit
+          provident cupiditate!
+        </p>
+        <h4>
+          <a href="http://en.wikipedia.org/wiki/Coffee" target="_blank"
+            >Details</a
+          >
+        </h4>
+        <!-- end of Columbian Roast -->
+      </section>
+    </main>
+    <footer>
+      <p id="copyright">
+        copyright &copy;
+        <script>
+          const span = document.createElement("span");
+          span.textContent = new Date().getFullYear().toString();
+          const paragraph = document
+            .getElementById("copyright")
+            .appendChild(span);
+        </script>
+      </p>
+      <h3>
+        <a href="#top">Back to top</a>
+      </h3>
+    </footer>
   </body>
 </html>
